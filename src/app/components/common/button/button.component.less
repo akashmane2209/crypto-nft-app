@@ -1,0 +1,49 @@
+@import '../../../../less/variables.less';
+
+button {
+	border: none;
+	outline: none;
+	background-color: @white;
+	padding: @spacing-sm;
+	border-radius: @border-radius-md;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'TTInterfaces', 'arial', sans-serif;
+	.icon-before,
+	.icon-after,
+	.label {
+		padding: @spacing-xs;
+	}
+  width: 100%;
+	transition: transform 0.2s ease-in-out;
+	&:active {
+		transform: scale(0.9);
+	}
+}
+
+.primary {
+	color: @black;
+	background-color: @green;
+}
+.secondary {
+	color: @white;
+	background-color: @purple;
+}
+.tertiary {
+	color: @white;
+	background-color: @gray;
+}
+.transparent {
+  color: @white;
+  background-color: transparent;
+}
+.bordered {
+  color: @white;
+  background-color: transparent;
+  border: 1px solid @purple;
+  &:hover {
+    background-color: @purple;
+  }
+}

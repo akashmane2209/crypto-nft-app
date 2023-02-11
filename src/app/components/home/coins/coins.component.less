@@ -1,0 +1,22 @@
+@import '../../../../less/variables.less';
+
+@keyframes ticker-animation {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(var(--slider-width), 0, 0);
+  }
+}
+.coins-container {
+  margin: @spacing-sm 0;
+  .first-row, .second-row {
+    overflow: hidden;
+    margin-bottom: 1px;
+    .slider-flex {
+      display: flex;
+      animation: ticker-animation 10s linear infinite;
+    }
+  }
+
+}

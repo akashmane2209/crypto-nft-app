@@ -1,0 +1,65 @@
+[
+	{
+		"id": 1,
+		"image": "assets/nfts/eth.webp",
+		"price": 0.40,
+		"crypto": "ETH",
+		"time_elapsed": 76845,
+    "name": "infinity #88",
+    "artist": "@gopibarat"
+	},
+	{
+		"id": 2,
+		"image": "assets/nfts/btc.webp",
+		"price": 0.023,
+		"crypto": "BTC",
+		"time_elapsed": 26650,
+    "name": "infinity #98",
+    "artist": "@realy"
+	},
+	{
+		"id": 3,
+		"image": "assets/nfts/doge.jpeg",
+		"price": 1120,
+		"crypto": "DOGE",
+		"time_elapsed": 46613,
+    "name": "infinity #108",
+    "artist": "@realy_1"
+	},
+	{
+		"id": 4,
+		"image": "assets/nfts/link.jpeg",
+		"price": 227,
+		"crypto": "LINK",
+		"time_elapsed": 451584,
+    "name": "infinity #208",
+    "artist": "@ksi"
+	},
+	{
+		"id": 5,
+		"image": "assets/nfts/matic.jpeg",
+		"price": 45,
+		"crypto": "MATIC",
+		"time_elapsed": 16365,
+    "name": "infinity #308",
+    "artist": "@miniminter"
+	},
+	{
+		"id": 6,
+		"image": "assets/nfts/sol.png",
+		"price": 87,
+		"crypto": "SOL",
+		"time_elapsed": 675,
+    "name": "infinity #408",
+    "artist": "@behz"
+	},
+	{
+		"id": 7,
+		"image": "assets/nfts/usdt.jpeg",
+		"price": 1.31,
+		"crypto": "USDT",
+		"time_elapsed": 78156,
+    "name": "infinity #508",
+    "artist": "@vikstar"
+	}
+]

@@ -1,0 +1,37 @@
+[
+	{
+		"uuid": "Qwsogvtv82FCd",
+		"symbol": "BTC",
+		"name": "Bitcoin"
+	},
+	{
+		"uuid": "razxDUgYGNAdQ",
+		"symbol": "ETH",
+		"name": "Ethereum"
+	},
+	{
+		"uuid": "HIVsRcGKkPFtW",
+		"symbol": "USDT",
+		"name": "Tether USD"
+	},
+	{
+		"uuid": "uW2tk-ILY0ii",
+		"symbol": "MATIC",
+		"name": "Polygon"
+	},
+	{
+		"uuid": "a91GCGd_u96cF",
+		"symbol": "DOGE",
+		"name": "Dogecoin"
+	},
+	{
+		"uuid": "zNZHO_Sjf",
+		"symbol": "SOL",
+		"name": "Solana"
+	},
+	{
+		"uuid": "VLqpJwogdhHNb",
+		"symbol": "LINK",
+		"name": "Chainlink"
+	}
+]

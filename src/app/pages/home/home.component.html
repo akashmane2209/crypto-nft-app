@@ -1,0 +1,7 @@
+<div [@slideIFromTop]>
+  <app-balance ></app-balance>
+</div>
+  <app-coins (updateCoinFilter)="setCoinFilter($event)"></app-coins>
+<div [@slideInFromBottom]>
+  <app-nfts [activeCoinFilter]="activeCoinFilter"></app-nfts>
+</div>

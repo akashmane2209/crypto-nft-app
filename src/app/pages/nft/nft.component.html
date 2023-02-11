@@ -1,0 +1,34 @@
+<div class="nft-details-container">
+  <app-button  class="back-button" (click)="goBack()"  iconBefore="arrow_back"></app-button>
+  <div class="image-container">
+    <img src="{{nft.image}}" alt="{{nft.name}}">
+  </div>
+  <div class="artist-nft-details">
+    <p class="nft-name">
+      {{nft.name}}
+    </p>
+    <div class="artist-details">
+      <div class="text">
+        <p class="creator">creator</p>
+        <p class="username">{{nft.artist}}</p>
+      </div>
+     <app-button [bordered]="true" iconBefore="person_add"></app-button>
+    </div>
+  </div>
+  <div class="timer-price-tabs">
+    <div class="tab">
+      <cd-timer class="timer" [startTime]="nft.time_elapsed" format="user">
+        [hours]  :  [minutes]  :  [seconds]
+      </cd-timer>
+    </div>
+    <div class="tab">
+      <img class="crypto-symbol" src="assets/coins/default/{{nft.crypto}}.svg" alt="symbol-{{nft.crypto}}" />
+      <span>{{nft.price}}</span>
+    </div>
+
+  </div>
+  <div class="button-container">
+    <app-button variant="primary" class="bid-button" label="place a bid" iconAfter="arrow_forward"></app-button>
+  </div>
+
+</div>

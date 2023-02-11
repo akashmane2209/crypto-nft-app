@@ -1,0 +1,10 @@
+<div class="nft-card">
+  <img draggable="false" class="card-image" [src]="nft.image" alt="nft-{{nft.crypto}}"/>
+  <div class="nft-details">
+    <div class="price">
+      <img src="assets/coins/default/{{nft.crypto}}.svg" alt="symbol-{{nft.crypto}}" />
+      <span>{{nft.price}}</span>
+    </div>
+    <cd-timer class="timer" [startTime]="nft.time_elapsed" format="hms"></cd-timer>
+  </div>
+</div>

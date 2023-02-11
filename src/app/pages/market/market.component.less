@@ -1,0 +1,122 @@
+@import '../../../less/variables.less';
+.market-container {
+	max-height: 640px;
+	height: 640px;
+	background-color: @black;
+  position: relative;
+	.header-container {
+		padding: @spacing-sm;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.back-button,
+		.empty {
+			flex: 1;
+      ::ng-deep {
+        button {
+          width: auto;
+        }
+      }
+		}
+		.symbol {
+			display: flex;
+			align-items: center;
+			img {
+				width: 30px;
+				margin-right: @spacing-md;
+			}
+		}
+	}
+	.chart-container {
+		.price-container {
+			display: flex;
+			padding: @spacing-md;
+			align-items: flex-end;
+		}
+		.change {
+			margin-left: @spacing-sm;
+			font-size: 14px;
+		}
+		.profit {
+			color: @green;
+		}
+		.loss {
+			color: #f23753;
+		}
+		.time-periods {
+			float: left;
+			width: 360px;
+			overflow-x: hidden;
+      margin-bottom: 10px;
+			.slider {
+				cursor: grab;
+        overflow: hidden;
+        @media @mobile {
+          overflow-x: scroll;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+          -ms-overflow-style: none; /* IE and Edge */
+          scrollbar-width: none;
+        }
+				&:active {
+					cursor: grabbing;
+				}
+				display: flex;
+				.period-tab {
+					background-color: @gray;
+					padding: @spacing-sm 30px;
+					border-radius: @border-radius-md;
+					margin-right: 1px;
+					white-space: nowrap;
+					cursor: pointer;
+					transition: all 0.2s ease-in-out;
+					&:hover {
+						transform: scale(0.9);
+					}
+				}
+				.active-tab {
+					background-color: @white;
+					color: @black;
+				}
+			}
+		}
+		.buttons {
+			display: flex;
+			margin-top: @spacing-xs;
+			padding: 0 @spacing-xs;
+			justify-content: space-between;
+			.btn {
+				flex: 1;
+			}
+			.sell {
+				margin-right: 5px;
+			}
+
+			::ng-deep {
+				button {
+					font-size: 22px;
+				}
+			}
+			.buy {
+				::ng-deep {
+					button {
+						.icon-after {
+                  transform: rotate(90deg)
+            }
+					}
+				}
+			}
+		}
+	}
+}
+.loading-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  img {
+    width: 150px;
+  }
+
+}

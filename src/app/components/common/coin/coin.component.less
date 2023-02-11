@@ -1,0 +1,27 @@
+@import '../../../../less/variables.less';
+
+.coin {
+  display: flex;
+  border-radius: @border-radius-xl;
+  padding: @spacing-md;
+  background-color: @gray;
+  color: @white;
+  align-items: center;
+  justify-content: center;
+  min-width: 105px;
+  margin: 0 1px;
+  cursor: pointer;
+  transition: all .2s ease-in;
+  &:hover {
+    background-color: @green;
+    color: @black;
+  }
+  img {
+    width: 25px;
+    margin-right: @spacing-xs;
+  }
+}
+.active {
+  background-color: @green;
+  color: @black;
+}

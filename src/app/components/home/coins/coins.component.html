@@ -1,0 +1,18 @@
+<div class="coins-container">
+  <div class="first-row">
+    <div class="slider-flex" [style]="{'--slider-width': -(firstHalf.length * 137) + 'px'}">
+      <app-coin (click)="onCoinClick(coin)" (mouseleave)="onMouseLeave()" (mouseenter)="onMouseEnter(coin.symbol)"  *ngFor="let coin of firstHalf" [coin]="coin" [activeCoin]="activeCoin" [filterCoin]="filterCoin">
+      </app-coin>
+      <app-coin (click)="onCoinClick(coin)" (mouseleave)="onMouseLeave()" (mouseenter)="onMouseEnter(coin.symbol)" *ngFor="let coin of firstHalf" [coin]="coin" [activeCoin]="activeCoin" [filterCoin]="filterCoin">
+      </app-coin>
+    </div>
+  </div>
+  <div class="second-row">
+    <div class="slider-flex" [style]="{'--slider-width': -(secondHalf.length * 137) + 'px'}">
+      <app-coin (click)="onCoinClick(coin)" (mouseleave)="onMouseLeave()" (mouseenter)="onMouseEnter(coin.symbol)" *ngFor="let coin of secondHalf" [coin]="coin" [activeCoin]="activeCoin" [filterCoin]="filterCoin">
+      </app-coin>
+      <app-coin (click)="onCoinClick(coin)" (mouseleave)="onMouseLeave()" (mouseenter)="onMouseEnter(coin.symbol)"  *ngFor="let coin of secondHalf" [coin]="coin" [activeCoin]="activeCoin" [filterCoin]="filterCoin">
+      </app-coin>
+  </div>
+</div>
+

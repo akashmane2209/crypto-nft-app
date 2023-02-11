@@ -1,0 +1,5 @@
+<div class="coin" [class.active]="coin.symbol === filterCoin">
+  <img src="assets/coins/{{coin.symbol === activeCoin || coin.symbol === filterCoin ? 'active' : 'default'}}/{{coin.symbol}}.svg" />
+  <p>{{coin.name}}</p>
+</div>
+

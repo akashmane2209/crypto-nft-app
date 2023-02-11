@@ -1,0 +1,45 @@
+<div class="market-container" *ngIf="!notFound; else notFoundView">
+  <div class="header-container">
+    <app-button  class="back-button" (click)="goBack()" variant="transparent" iconBefore="arrow_back"></app-button>
+    <div class="symbol">
+      <img src="assets/coins/default/{{coinSymbol}}.svg" alt="{{coinSymbol}}">
+      <p>{{coin.name}}</p>
+    </div>
+    <div class="empty"></div>
+  </div>
+  <div class="chart-container" *ngIf="coinHistory && data.length > 0 && labels.length > 0; else loadinView">
+    <div class="price-container">
+      <app-amount size="xlarge" [amount]="price"></app-amount>
+      <p class="change" [class.profit]="change >= 0" [class.loss]="change < 0">
+        {{change >= 0 ? '+' : ''}} {{ change }}%
+      </p>
+
+    </div>
+    <div class="time-periods">
+      <div class="slider">
+        <div class="period-tab" [class.active-tab]="selectedTimePeriod === period" (click)="setTimePeriod(period)"  *ngFor="let period of timePeriods" >{{period}}</div>
+      </div>
+
+    </div>
+    <app-crypto-chart  [chartData]="data" [chartLabels]="labels"></app-crypto-chart>
+    <div class="buttons">
+      <app-button class="btn sell" variant="secondary" label="sell" iconAfter="arrow_outward"></app-button>
+      <app-button class="btn buy" variant="primary" label="buy" iconAfter="arrow_outward"></app-button>
+    </div>
+  </div>
+  <ng-template #loadinView>
+    <div class="loading-container">
+      <img src="assets/loader.svg" alt="loader" />
+    </div>
+  </ng-template>
+
+</div>
+<ng-template #notFoundView>
+  <div class="header-container">
+    <app-button (click)="goBack()" variant="transparent" iconBefore="arrow_back"></app-button>
+  </div>
+  <div class="not-found">
+    Coin not found
+  </div>
+</ng-template>
+

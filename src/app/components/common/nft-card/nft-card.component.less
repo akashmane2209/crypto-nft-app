@@ -1,0 +1,39 @@
+@import '../../../../less/variables.less';
+.nft-card {
+  cursor: pointer;
+	.card-image {
+		width: 100%;
+    min-height: 100px;
+		overflow: hidden;
+		border-top-left-radius: @border-radius-2xl;
+    border-top-right-radius: @border-radius-2xl;
+    border-bottom-left-radius: @border-radius-lg;
+    border-bottom-right-radius: @border-radius-lg;
+    transition: transform .2s ease-in-out;
+    &:active {
+      transform: scale(0.95);
+    }
+	}
+  .nft-details {
+    background-color: @gray;
+    padding:  @spacing-lg @spacing-md;
+    border-radius: @border-radius-lg;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .price {
+      display: flex;
+      align-items: center;
+      img {
+        width: 20px;
+        margin-right: @spacing-sm;
+      }
+      color: @white;
+    }
+    .timer {
+      color: #AAA9AE;
+      font-family: 'TTInterfaces', 'arial', sans-serif;
+    }
+  }
+  margin-bottom: @spacing-xs;
+}

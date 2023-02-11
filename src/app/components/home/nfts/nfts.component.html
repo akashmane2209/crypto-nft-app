@@ -1,0 +1,3 @@
+<div class="nfts-container">
+  <app-nft-card (click)="onNftClick(nft.id)" *ngFor="let nft of NFTS_DATA" [nft]="nft"></app-nft-card>
+</div>

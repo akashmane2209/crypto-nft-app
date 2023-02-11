@@ -1,0 +1,5 @@
+<button [class]="[variant]" [class.bordered]="bordered" *ngIf="iconBefore || label || iconAfter">
+  <span *ngIf="iconBefore" class="material-symbols-outlined icon-before"> {{ iconBefore }} </span>
+  <p *ngIf="label" class="label"> {{ label }} </p>
+  <span *ngIf="iconAfter" class="material-symbols-outlined icon-after"> {{ iconAfter }} </span>
+</button>
