@@ -46,6 +46,9 @@
 		.time-periods {
 			float: left;
 			width: 360px;
+      @media @mobile {
+        width: 100%;
+      }
 			overflow-x: hidden;
       margin-bottom: 10px;
 			.slider {
@@ -63,6 +66,9 @@
 					cursor: grabbing;
 				}
 				display: flex;
+        @media @mobile {
+          justify-content: space-around;
+        }
 				.period-tab {
 					background-color: @gray;
 					padding: @spacing-sm 30px;

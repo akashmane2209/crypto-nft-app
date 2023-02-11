@@ -71,7 +71,6 @@ export class CryptoChartComponent implements OnChanges {
 				tension: 0.1,
 			},
 		},
-    responsive: true,
     maintainAspectRatio: false,
 		scales: {
 			x: {
