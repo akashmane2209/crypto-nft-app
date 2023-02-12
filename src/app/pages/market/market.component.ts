@@ -3,10 +3,6 @@ import { initializeSlider } from 'src/app/utils/slider';
 import { CoinService, CoinHistory, TIME_PERIOD_KEY } from '../../services/coins.service';
 import {
 	Component,
-	OnInit,
-	AfterViewInit,
-	OnChanges,
-	SimpleChanges,
 	OnDestroy,
 } from '@angular/core';
 import * as COINS from 'src/app/data/coins.json';
@@ -88,7 +84,7 @@ export class MarketComponent implements OnDestroy {
 				this.price = +data.history[0].price;
 				this.data = this.coinHistory.map((c) => +c.price);
 				this.labels = this.coinHistory.map((c) => c.timestamp);
-        if(this.selectedTimePeriod === '15 m') {
+        if(this.selectedTimePeriod === '15 min') {
           this.data = this.data.splice(0, 15)
           this.labels = this.labels.splice(0, 15)
         }

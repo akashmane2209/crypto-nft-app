@@ -4,7 +4,7 @@ import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http
 import { catchError, retry, throwError } from 'rxjs';
 
 export const TIME_PERIOD_KEY = {
-  '15 m': '1h',
+  '15 min': '1h',
   '1 h':'1h',
   '1 d':'24h',
   '1 w':'7d',
